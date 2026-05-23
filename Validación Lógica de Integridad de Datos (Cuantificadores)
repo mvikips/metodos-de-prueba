@@ -1,0 +1,15 @@
+def verificar_regla_transacciones(lote_transacciones):
+    # Caso base implícito: verificar existencia de registros
+    if not lote_transacciones:
+        return False
+        
+    regla_universal_cumplida = True
+    
+    for t in lote_transacciones:
+        # Evaluación de la implicación lógica del cuantificador universal
+        if t['monto'] > 50000:
+            if t['autenticacion'] != "MFA":
+                regla_universal_cumplida = False
+                break # Interrupción por detección de contraejemplo
+                
+    return regla_universal_cumplida
