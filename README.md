@@ -191,3 +191,6 @@ def calcular_profundidad_maxima(nodo_actual):
 [3. Juárez, J. A. (2011). *Dificultades en la interpretación del concepto de variable en profesores de matemáticas de secundaria: un análisis mediante el modelo 3UV*. Números, 76, pp. 83-103.](https://es.scribd.com/document/161036447/Variables-Matematicas)
 
 [4. Rosen, Kenneth H. (2019). *Matemática discreta y sus aplicaciones*. McGraw-Hill.](https://es.scribd.com/document/413993612/Mates-Discretas-Rosen-pdf)
+
+[5. Dificultades en la interpretación](Dificultades_en_la_interpretación.pdf)
+
