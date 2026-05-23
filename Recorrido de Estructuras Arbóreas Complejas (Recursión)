@@ -1,0 +1,17 @@
+class NodoEstructura:
+    def __init__(self, identificador):
+        self.id = identificador
+        self.hijos = [] # Almacena referencias a subnodos jerárquicos
+
+def calcular_profundidad_maxima(nodo_actual):
+    # Caso Base: Si el nodo inspeccionado no posee ramificaciones
+    if not nodo_actual.hijos:
+        return 1
+        
+    # Paso Recursivo: Invocar recursivamente el cálculo sobre cada hijo
+    profundidades = []
+    for hijo in nodo_actual.hijos:
+        profundidades.append(calcular_profundidad_maxima(hijo))
+        
+    # La profundidad del nodo es 1 más el máximo valor obtenido en sus ramas
+    return max(profundidades) + 1
